@@ -7,43 +7,23 @@
         <link rel="stylesheet" href="./main.css">
         <title>F8-Shop</title>
         <style>
+            html, body {
+                margin: 0;
+            }
             .box {
                 width: 100px;
                 height: 100px;
-                background-color: rgba(102, 199, 255);
-            }
-            .box::before {
-                content: "Jisoo";
-                display: block;
-                width: 50px;
-                height: 50px;
-                background-color: red;
-            }
-            .box::after {
-                content: "Lisa";
-                display: block;
-                width: 50px;
-                height: 50px;
-                background-color: green;
+                color: white;
+                background-color: darkorchid;
+                padding: 10px;
+                border: 5px solid rgb(137, 255, 153);
+                box-sizing: border-box;
             }
 
-            /* h1::first-letter {
-                font-size: 50px;
-            } */
-
-            h1::first-line {
-                color: violet;
-            }
-            
-            h1::selection {
-                color: blue;
-            }
         </style>
     </head>
 
     <body>
-        <h1>Duy love Tzuyu <br/> Dong thu hai</h1>
-        
-        <div class="box" title="Tzuyu"></div>
+        <div class="box">Day la noi dung bai viet</div>
     </body>
 </html> 
