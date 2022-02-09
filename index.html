@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"><!-- Hỗ trợ hiển thị tiếng việt cho trang web -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F8-Shop</title>
-</head>
-<body>
-    <h1 title="HTML, CSS từ zero đến Hero" >Học về attribute trong HTML</h1>
-    <a href="https://fullstack.edu.vn/">Học HTML tại F8</a>
-    <img src="https://img.youtube.com/vi/0SJE9dYdpps/sddefault.jpg" width="250" title="Lập trình Javascript cơ bản" alt="F8">
-</body>
+    <head>
+        <meta charset="UTF-8"><!-- Hỗ trợ hiển thị tiếng việt cho trang web -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        <title>F8-Shop</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: rgba(102, 199, 255);
+            }
+            .box::before {
+                content: "Jisoo";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+            }
+            .box::after {
+                content: "Lisa";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: green;
+            }
+
+            /* h1::first-letter {
+                font-size: 50px;
+            } */
+
+            h1::first-line {
+                color: violet;
+            }
+            
+            h1::selection {
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Duy love Tzuyu <br/> Dong thu hai</h1>
+        
+        <div class="box" title="Tzuyu"></div>
+    </body>
 </html> 
